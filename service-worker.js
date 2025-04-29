@@ -10,6 +10,7 @@ self.addEventListener('install', (e) => {
         'images/chien.jpg',
         'images/chat.jpg',
         'images/soleil.jpg',
+        'images/Physique.png',
         'icons/icon-192.png',
         'icons/icon-512.png'
       ]);
