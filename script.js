@@ -29,7 +29,7 @@ function afficherImage() {
     let images = {
         "chien": "images/chien.jpg",
         "chat": "images/chat.jpg",
-        "soleil": "images/soleil.jpg"
+        "physique": "images/Physique.png"
     };
 
     if (images[mot]) {
