@@ -125,7 +125,7 @@ img {
 }
 
 .image-page button:hover {
-    background-color: #ff0000;
+    background-color: #0045ff;
     border-color: white;
     transform: scale(1.05);
 }
@@ -138,7 +138,7 @@ img {
     box-shadow: 0 10px 20px rgba(255, 0, 0, 0.7);
     width: 100%;
     max-width: 600px;
-    border: 3px solid #aa0000;
+    border: 3px solid #002eaa;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     margin-top: 20px;
     font-size: 2rem;
@@ -171,7 +171,7 @@ img {
 }
 
 button {
-    background-color: #ff4444;
+    background-color: #306fff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -183,7 +183,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff0000;
+    background-color: #306fff;
 }
 /* Animation pour afficher et cacher le message */
 @keyframes fadeInOut {
@@ -207,7 +207,7 @@ button:hover {
 }
 
 .erreur-content button {
-    background-color: #ff3b30;
+    background-color: #3059ff;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -218,5 +218,5 @@ button:hover {
 }
 
 .erreur-content button:hover {
-    background-color: #d32f2f;
+    background-color: #306fff;
 }
