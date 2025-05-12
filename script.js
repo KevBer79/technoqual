@@ -27,9 +27,16 @@ function afficherImage() {
     let mot = inputField.value.toLowerCase();
 
     let images = {
-        "chien": "images/chien.jpg",
-        "chat": "images/chat.jpg",
-        "physique": "images/Physique.png"
+        "chien": "images/Mircobio.png",
+        "chat": "images/Chimique.png",
+        "Safran": "images/Allergène.png",
+        "safran": "images/Allergène.png",
+        "Moutarde": "images/Allergène.png",
+        "moutarde": "images/Allergène.png",
+        "Farine de blés": "images/Allergène.png",
+        "farine de blés": "images/Allergène.png",
+        "bout de bois": "images/Physique.png",
+        "Bout de bois": "images/Physique.png"
     };
 
     if (images[mot]) {
