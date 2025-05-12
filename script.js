@@ -27,7 +27,7 @@ function afficherImage() {
     let mot = inputField.value.toLowerCase();
 
     let images = {
-        "chien": "images/Mircobio.png",
+        "chien": "images/Microbio.png",
         "chat": "images/Chimique.png",
         "Safran": "images/Allergène.png",
         "safran": "images/Allergène.png",
