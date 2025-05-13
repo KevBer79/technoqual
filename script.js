@@ -81,5 +81,5 @@ function fermerMessageErreur() {
 
 // Démarrer le décompte quand la page est chargée
 window.onload = function () {
-    startCountdown(20); // Lance le compte à rebours de 20 minutes
+    startCountdown(15); // Lance le compte à rebours de 15 minutes
 };
