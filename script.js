@@ -11,13 +11,21 @@ function startCountdown(durationInMinutes) {
         let formattedTime = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
         timerElement.textContent = `⏳ Temps restant : ${formattedTime} ⏳`;
 
-        if (timeLeft <= 0) {
-            clearInterval(countdownInterval);
-            timerElement.textContent = "⏳ Temps écoulé ⏳!";
-            afficherMessageErreur("Temps écoulé. On dirait que vous avez été un peu trop lents... ");
-        }
+       if (timeLeft <= 0) {
+            clearInterval(countdownInterval);
+            timerElement.textContent = "⏳ Temps écoulé ⏳!";
+            afficherMessageErreur("Temps écoulé. On dirait que vous avez été un peu trop lents... ");
 
-        timeLeft--; // Réduction du temps restant
+            // ▶️ Lecture de l’alarme
+            let alarme = document.getElementById("alarmeAudio");
+            if (alarme) {
+                alarme.play().catch(e => {
+                    console.error("Erreur lors de la lecture de l'alarme :", e);
+                });
+            }
+        }
+
+        timeLeft--; // Réduction du temps restant
     }, 1000); // Mettre à jour toutes les secondes
 }
 
