@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recherche d'Image</title>
-    <link rel="stylesheet" href="style.css">
-<!-- Meta et PWA -->
-<link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#ff0000">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche d'Image</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Meta et PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ff0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body>
 
-    <div class="container">
-        <h2>🔍 TAPE LE CODE POUR SORTIR	🔍</h2>
-        <input type="text" id="inputText" placeholder="Saisir le mot code ici" autocomplete="off">
-<button onclick="afficherImage()">Rechercher</button>
+    <div class="container">
+        <h2>🔍 TAPE LE CODE POUR SORTIR  🔍</h2>
+        <input type="text" id="inputText" placeholder="Saisir le mot code ici" autocomplete="off">
+        <button onclick="afficherImage()">Rechercher</button>
 
-	<div class="timer-container">
-        	<p id="timer">⏳ Temps restant : 15:00 ⏳</p>
-	</div>
+        <div class="timer-container">
+            <p id="timer">⏳ Temps restant : 15:00 ⏳</p>
+        </div>
 
-        <div class="image-container">
-            <img id="imageAffichee" src="" alt="Image trouvée">
-        </div>
-    </div>
+        <div class="image-container">
+            <img id="imageAffichee" src="" alt="Image trouvée">
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Audio pour l'alarme -->
+    <audio id="alarmeAudio" src="alarme.mp3" preload="auto"></audio>
 
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('service-worker.js').then(function () {
-        console.log("✅ Service Worker enregistré");
-      });
-    });
-  }
-</script>
+    <script src="script.js"></script>
 
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('service-worker.js').then(function () {
+            console.log("✅ Service Worker enregistré");
+          });
+        });
+      }
+    </script>
 </body>
 </html>
