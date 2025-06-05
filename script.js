@@ -32,16 +32,11 @@ function afficherImage() {
         "Developpement microbiologique": "images/Microbio.png",
         "developpement microbiologique": "images/Microbio.png",
         "encre": "images/Chimique.png",
-        "Safran": "images/Allergène.png",
-        "safran": "images/Allergène.png",
-        "Moutarde": "images/Allergène.png",
-        "moutarde": "images/Allergène.png",
-        "Farine de blés": "images/Allergène.png",
-        "Farine de bles": "images/Allergène.png",
-        "farine de blés": "images/Allergène.png",
-        "farine de bles": "images/Allergène.png",
-        "bout de bois": "images/Physique.png",
-        "Bout de bois": "images/Physique.png"
+        "Encre": "images/Chimique.png",
+        "soja": "images/Allergène.png",
+        "Soja": "images/Allergène.png",
+        "Bois": "images/Physique.png",
+        "bois": "images/Physique.png"
     };
 
     if (images[mot]) {
