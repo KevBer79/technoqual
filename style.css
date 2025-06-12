@@ -17,6 +17,7 @@ body {
 
 /* ---- Conteneur principal ---- */
 .container {
+    text-align: center;
     background: rgba(0, 0, 0, 0.85);
     padding: 30px;
     border-radius: 15px;
